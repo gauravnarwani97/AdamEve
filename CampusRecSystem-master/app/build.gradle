@@ -27,10 +27,10 @@ dependencies {
     compile 'com.android.support:appcompat-v7:27.1.0'
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:design:27.1.0'
-<<<<<<< HEAD
 
-=======
->>>>>>> 134f5a1ecfa3638105e7b55b1a7e8149a43457e4
+
+
+
     compile  'com.google.firebase:firebase-core:12.0.0'
     compile 'com.google.firebase:firebase-database:12.0.0'
     compile 'com.google.firebase:firebase-auth:12.0.0'
