@@ -1,8 +1,5 @@
 package com.example.faizrehman.campus_recruitment_system.Model;
 
-/**
- * Created by faizrehman on 1/25/17.
- */
 
 public class UserModel {
 

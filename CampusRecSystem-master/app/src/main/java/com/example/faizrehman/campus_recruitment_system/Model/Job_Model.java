@@ -1,9 +1,5 @@
 package com.example.faizrehman.campus_recruitment_system.Model;
 
-/**
- * Created by faizrehman on 1/26/17.
- */
-
 public class Job_Model {
    private String job_title;
    private String comp_detail;
