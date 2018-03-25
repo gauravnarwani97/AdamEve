@@ -6,43 +6,46 @@
 
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/job_name"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
         android:text="Job Title"
-        android:textSize="35dp"
         android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        />
+        android:textSize="35dp" />
     jobtitle;
     TextView comp_detail,comp_name,comp_email,comp_cat
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/comp_detail"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
         android:text="Company Detail"
         android:textSize="20dp"
 
         />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/comp_namee"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
         android:text="Company Name"
         android:textSize="20dp"
 
         />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/comp_jobemail"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
         android:text="Company Email"
         android:textSize="20dp"
 
         />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/comp_jobcat"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
         android:text="Job Category"
         android:textSize="20dp"
 
