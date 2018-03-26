@@ -27,6 +27,9 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+/**
+ * Created by faizrehman on 1/25/17.
+ */
 
 public class signup_fragment extends android.support.v4.app.Fragment {
 
@@ -61,16 +64,16 @@ public class signup_fragment extends android.support.v4.app.Fragment {
         fname = (EditText) view.findViewById(R.id.editText_fname);
         lname = (EditText) view.findViewById(R.id.editText_lname);
         signup = (Button)view.findViewById(R.id.signup_btn);
-       // memberShiptype = (Spinner) view.findViewById(R.id.editGender);
+        memberShiptype = (Spinner) view.findViewById(R.id.editGender);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity(), android.R.layout.simple_dropdown_item_1line, Gender);
-       // memberShiptype.setAdapter(adapter);
+        memberShiptype.setAdapter(adapter);
 
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 final String pass = password.getText().toString();
-             ///   final String type = memberShiptype.getSelectedItem().toString();
+                final String type = memberShiptype.getSelectedItem().toString();
                 final String confrim_passwordd = confirmpass.getText().toString();
                                 //Checking the length of pasword while registering new USER;
                                         if (pass.length() <= 6) {
@@ -107,7 +110,7 @@ public class signup_fragment extends android.support.v4.app.Fragment {
                                     @Override
                                     public void onComplete(@NonNull Task<AuthResult> task) {
                                         String uid = mAuth.getCurrentUser().getUid();
-                                        firebase.child("Student").child(uid).setValue(new UserModel(email.getText().toString(),pass,confrim_passwordd,uid,fname.getText().toString(),lname.getText().toString()));
+                                        firebase.child(type).child(uid).setValue(new UserModel(email.getText().toString(),pass,confrim_passwordd,uid,fname.getText().toString(),lname.getText().toString()));
 //                                                if (task.isSuccessful()) {
                                       //  firebase.child("User").child(uid).setValue();
                                         progressDialog.dismiss();

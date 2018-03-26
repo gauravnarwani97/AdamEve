@@ -55,33 +55,29 @@
         </LinearLayout>
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif-condensed"
-            android:text="Student Login"
-            android:textAllCaps="false"
-            android:id="@+id/student_login_btn"
-            />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Admin Login"
+        android:fontFamily="sans-serif-condensed"
+        android:textAllCaps="false"
+        android:id="@+id/admin_Login_btn" />
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif-condensed"
-            android:text="Event Organizers"
-            android:textAllCaps="false"
-            android:id="@+id/event_login_btn" />
-
-
-
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Student Login"
+        android:textAllCaps="false"
+        android:id="@+id/student_login_btn" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="TPO Login"
+        android:text="Company Login"
         android:textAllCaps="false"
         android:id="@+id/company_login_btn" />
         <TextView

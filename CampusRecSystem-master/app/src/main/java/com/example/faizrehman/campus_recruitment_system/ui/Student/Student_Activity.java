@@ -34,7 +34,7 @@ public class Student_Activity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         viewPager = (ViewPager)findViewById(R.id.view_pager);
         fragmentArrayListl = new ArrayList<>();
-        tabLayout.addTab(tabLayout.newTab().setText("Events"));
+        tabLayout.addTab(tabLayout.newTab().setText("Companies"));
         tabLayout.addTab(tabLayout.newTab().setText("Jobs"));
         tabLayout.addTab(tabLayout.newTab().setText("My Profile"));
         Company_fragment company_fragment = new Company_fragment();

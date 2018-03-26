@@ -8,7 +8,6 @@
     tools:context="com.example.faizrehman.campus_recruitment_system.ui.Student.Student_Activity">
 
 
-
     <android.support.design.widget.TabLayout
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"

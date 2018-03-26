@@ -16,7 +16,6 @@ import com.example.faizrehman.campus_recruitment_system.AppLogs;
 import com.example.faizrehman.campus_recruitment_system.R;
 import com.example.faizrehman.campus_recruitment_system.ui.Admin.AdminActivity;
 import com.example.faizrehman.campus_recruitment_system.ui.Company.Company_Activity;
-import com.example.faizrehman.campus_recruitment_system.ui.Event.Event_Activity;
 import com.example.faizrehman.campus_recruitment_system.ui.Student.Student_Activity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -170,31 +169,6 @@ public class LoginActivity extends AppCompatActivity {
                             Intent intent = new Intent(LoginActivity.this, Student_Activity.class);
                             editor.clear();
                             editor.putString("TAG","student");
-                            editor.commit();
-                            startActivity(intent);
-                            finish();
-                        } else {
-                            Toast.makeText(LoginActivity.this, "Something wrong", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-        }
-        else if(checkuser.matches("Event organizer")){
-            firebase.child("Event organizer").addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    if (dataSnapshot != null) {
-                        if (dataSnapshot.hasChild(uid)) {
-                            Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(LoginActivity.this,Event_Activity.class);
-                            editor.clear();
-                            editor.putString("TAG","Event organizer");
                             editor.commit();
                             startActivity(intent);
                             finish();
