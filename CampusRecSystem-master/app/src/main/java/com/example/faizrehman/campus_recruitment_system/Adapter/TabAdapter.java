@@ -6,7 +6,9 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import java.util.ArrayList;
 
-
+/**
+ * Created by faizrehman on 1/25/17.
+ */
 
 public class TabAdapter extends FragmentStatePagerAdapter {
 

@@ -12,6 +12,9 @@ import com.example.faizrehman.campus_recruitment_system.R;
 
 import java.util.ArrayList;
 
+/**
+ * Created by faizrehman on 1/26/17.
+ */
 
 public class CompanyListAdapter extends BaseAdapter {
 

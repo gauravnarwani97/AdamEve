@@ -2,6 +2,9 @@ package com.example.faizrehman.campus_recruitment_system;
 
 import android.util.Log;
 
+/**
+ * Created by faizrehman on 1/25/17.
+ */
 public class AppLogs {
     private static String TAG = "Recruitment System";
 
