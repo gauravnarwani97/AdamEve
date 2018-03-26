@@ -87,7 +87,7 @@ public class AdminActivity extends AppCompatActivity {
         switch (id){
             case R.id.action_logout:
                 AlertDialog.Builder builder = new AlertDialog.Builder(AdminActivity.this);
-                builder.setTitle("Exit !!");
+                builder.setTitle("Exit");
                 builder.setMessage("you want Logout..??");
                 builder.setNegativeButton("Yes", new DialogInterface.OnClickListener() {
                     @Override

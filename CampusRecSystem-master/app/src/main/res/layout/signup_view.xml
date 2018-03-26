@@ -150,13 +150,6 @@
                 android:textSize="14sp"  />
         </android.support.design.widget.TextInputLayout>
 
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:fontFamily="sans-serif-light"
-            android:id="@+id/editGender"
-            android:background="#fff"
-             />
 
     </LinearLayout>
     <Button
